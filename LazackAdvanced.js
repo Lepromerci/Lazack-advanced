@@ -16229,7 +16229,7 @@ case 'song': {
 
     // Use the video URL to fetch audio
     const xeonplaymp3 = require('./lib/ytdl');
-    const response = await axios.get(`https://apisku-furina.vercel.app/api/downloader/play?q=${text}&apikey=indradev`);
+    const response = await axios.get(`https://delirussapi-official.vercel.app/download/ytmp3?${text}`);
 
     if (!response.data || !response.data.result || !response.data.result.mp3) {
       return replygcxeon('🚫 Error fetching audio from the URL.');
